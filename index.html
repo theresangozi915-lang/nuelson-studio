@@ -9,7 +9,9 @@
 <meta property="og:title" content="Nuelson Studio - Video Editor &amp; AI Expert Nigeria">
 <meta property="og:description" content="Turning Ideas Into Viral Visuals.">
 <meta property="og:type" content="website">
-
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FFD700">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -1129,7 +1131,11 @@
       revealEls.forEach(function (el) { el.classList.add('in'); });
     }
   })();
+                          
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
 </script>
-
 </body>
 </html>
